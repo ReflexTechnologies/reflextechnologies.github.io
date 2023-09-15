@@ -7,7 +7,16 @@
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧠</text></svg>">
     <style>
         body {
-            background: #AFC9F0;
+            background: #000;
+            background-image: url("./unleash_web.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            min-height: 90vh;
+            /* background:center cent; */
+            background-position: center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
             font-size: 34em;
             text-align: center;
             font-family: Helvetica, sans-serif;
@@ -18,12 +27,31 @@
         p {
             margin: 0;
         }
+
+        #logo {
+            width: 100%;
+            max-width: 80vw;
+            max-height: 25vh;
+            margin: 0 auto;
+            display: block;
+            padding: 20px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 0%);
+        }
+
+        @media screen and (orientation: portrait) {
+            #logo {
+                margin-bottom: 15vh;
+            }
+        }
+
     </style>
 </head>
 
 <body>
-    <p>🧠</p>
-    <p>wip</p>
+    <img id="logo" src="./unleash_text.svg" alt="Reflex Technologies" />
 </body>
 
 </html>
